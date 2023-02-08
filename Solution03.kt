@@ -23,10 +23,6 @@ fun main() {
     println("$sumOfGroups = sumOfGroups")
 }
 
-fun getCommonChar(groupSet: MutableSet<Char>) {
-    //groupSet.first().forEach {}
-}
-
 private fun findDuplicate(bag: String): Char {
     val sub1 = bag.substring(0, bag.length / 2)
     val sub2 = bag.substring(bag.length / 2, bag.length)
@@ -46,13 +42,6 @@ private fun findDuplicate(bag: String): Char {
 private fun getCode(c: Char): Int {
     return if (c.code > 96) c.code - 96 else c.code - 64 + 26
 }
-
-val test = """vJrwpWtwJgWrhcsFMMfFFhFp
-jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL
-PmmdzqPrVvPwwTWBwg
-wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn
-ttgJtRGJQctTZtZT
-CrZsJsPPZsGzwwsLwLmpwMDw"""
 
 const val input =
 """LHLRlCCvCLVgHPfCHtVjBGrBDNzWFBsBGBfscGsD
